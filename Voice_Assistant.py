@@ -89,24 +89,6 @@ def auto_whatsapp():
                 print(mesg)
                 pywhatkit.sendwhatmsg_to_group_instantly(group_id="FoE5OZPBI7MCEwZ2S3RzwD",message=f"{mesg}",tab_close= True)
                 texttospeech("message sent")
-            elif "unofficial" in group_name:
-                texttospeech("what message you want me to text? ")
-                mesg=speechtotext()
-                print(mesg)
-                pywhatkit.sendwhatmsg_to_group_instantly(group_id="Fz8fHeZfCZ1DnpthFPUPgc",message=f"{mesg}",tab_close= True)
-                texttospeech("message sent")
-            elif "class" in group_name:
-                texttospeech("what message you want me to text? ")
-                mesg=speechtotext()
-                print(mesg)
-                pywhatkit.sendwhatmsg_to_group_instantly(group_id="Lo1BI1P6dthIK4SBY13h2j",message=f"{mesg}",tab_close= True)
-                texttospeech("message sent after 10 seconds")
-            elif "Family" in group_name:
-                texttospeech("what message you want me to text? ")
-                mesg=speechtotext()
-                print(mesg)
-                pywhatkit.sendwhatmsg_to_group_instantly(group_id="",message=f"{mesg}",tab_close= True)
-                texttospeech("message sent")
             else:
                 texttospeech("Group not found")
     else:
