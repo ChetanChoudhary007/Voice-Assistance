@@ -1,4 +1,5 @@
-```markdown
+<img src="https://img.freepik.com/premium-vector/person-using-voice-control-virtual-assistant-concept-artificial-intelligence-microphone-recognition_653980-111.jpg" alt="Diabetes Prediction" width="700" height="400">
+
 # Project: MARCH - Voice Assistant
 
 MARCH is a voice assistant created using Python that can perform various tasks such as accessing websites,
@@ -75,7 +76,3 @@ Contributions are welcome! If you have any suggestions or improvements, please o
 This project is licensed under the [MIT License](LICENSE).
 
 ---
-
-Feel free to customize this `README.md` template to match your project's structure and details. Add sections that explain your project's architecture, design, future plans, and any other relevant information.
-```
-
