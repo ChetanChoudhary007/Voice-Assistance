@@ -75,26 +75,9 @@ def qrcode_generataor():
     
 #Function: To automate whatsapp tasks
 def auto_whatsapp():
-    texttospeech("want to send message? ")
-    ans=speechtotext().lower()
-    if ans == "yes":
-        texttospeech("In a group sir?")
-        ans_1=speechtotext().lower()
-        if ans_1 == "yes":
-            texttospeech("group name sir")
-            group_name=speechtotext().lower()
-            if "toli" in group_name:
-                texttospeech("what message you want me to text? ")
-                mesg=speechtotext()
-                print(mesg)
-                pywhatkit.sendwhatmsg_to_group_instantly(group_id="FoE5OZPBI7MCEwZ2S3RzwD",message=f"{mesg}",tab_close= True)
-                texttospeech("message sent")
-            else:
-                texttospeech("Group not found")
-    else:
-        texttospeech("checking for messages in whatsapp for you")
-        webbrowser.open("https://web.whatsapp.com/")
-        texttospeech("is there anything you want me to do")
+    texttospeech("checking for messages in whatsapp for you")
+    webbrowser.open("https://web.whatsapp.com/")
+    texttospeech("is there anything you want me to do")
 
 #Function accessing wikipedia
 def wiki():
@@ -220,13 +203,6 @@ def task():
             movie=speechtotext().lower()
             texttospeech("playing"+ movie + " for you ")
             search=(f"https://www.primevideo.com/search/ref=atv_sr_sug_7?phrase={movie}%20movie&ie=UTF8")
-            chrome_automate(search)
-         
-        # 10.Handling instagram stories
-        elif "story" in command:
-            texttospeech("okay!")
-            texttospeech("Collecting best instagram stories temmplate for you") 
-            search=("https://designs.ai/designmaker/start/designs/64108abfaae134057cdbe9d9/edit?category=5d503d6df8ead94a97909bf9")
             chrome_automate(search)
 
         # 11.Exit
